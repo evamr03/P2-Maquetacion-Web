@@ -23,9 +23,14 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/locomotiv.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!--Locomotive Library-->
+  <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
 </head>
 
 <body class="index-page">
@@ -146,6 +151,21 @@
       </div>
     </section><!-- /Nós Section -->
       
+
+    <!--Fixed Image-->
+    <div class="data-scroll-container">
+      <section data-scroll-section>
+        <div class="sticky-image-container">
+          <div class="sticky-image-element" data-scroll data-scroll-sticky data-scroll-target=".sticky-image-container">
+            <img src="assets/img/fixed-1.jpg" class="sticky-image" alt="Imagen sticky">
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--End Fixed Image-->
+
+
+
        <!-- Por que Nós Section -->
     <section id="why-us" class="why-us section">
 
@@ -154,6 +174,7 @@
         <h2>Por que Nós</h2>
         <p>Unha viaxe gastronómica</p>
       </div><!-- End Section Title -->
+
 
       <div class="container">
 
@@ -894,6 +915,10 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!--Locomotive Library-->
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <script src="assets/js/locomotive.js"></script>
 
 </body>
 
