@@ -1,0 +1,13 @@
+.confirmation-message {
+    display: none;
+    background-color: #0c0b09;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    transition: top 0.5s ease-in-out;
+  }
