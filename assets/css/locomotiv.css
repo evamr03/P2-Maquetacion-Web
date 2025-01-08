@@ -1,0 +1,24 @@
+[data-scroll-container] {
+    overflow: hidden;
+}
+
+.sticky-image-container {
+    position: relative;
+    height: 200vh;
+    background-color: #0c0b09;
+}
+
+.sticky-image-element {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    transform: translateY(0);
+    margin: 0 auto;
+}
+
+.sticky-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}

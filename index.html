@@ -153,10 +153,15 @@
       
 
     <!--Fixed Image-->
-                <!--  </div>
-                    <div class="fixed-target"></div>
-                    <div class="dynamicBackground" data-scroll data-scroll-sticky data-scroll-target="sticky-image-element" style="background-image: ('assets/img/fixed-1.jpg');">
-                    </div>  -->
+      <div class="data-scroll-container" id="scroll-container" data-scroll-container data-scroll-speed="2">
+        <section data-scroll-section>
+          <div class="sticky-image-container">
+            <div class="sticky-image-element" data-scroll data-scroll-sticky data-scroll-target=".sticky-image-container">
+              <img src="assets/img/fixed-1.jpg" alt="Sticky Image" class="sticky-image"/>
+            </div>
+          </div>
+        </section>
+      </div>
     <!--End Fixed Image-->
 
 
@@ -813,7 +818,7 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <button type="submit">Enviar mensaje</button>
+                  <button type="submit" class="message-button">Enviar mensaje</button>
                 </div>
 
                     <div class="confirmation-message">
