@@ -1,3 +1,4 @@
+/*
 [data-scroll-container]{
     overflow: hidden;
     height: 200vh;
@@ -18,6 +19,37 @@
 }
 
 .sticky-image{
+    max-width: 60%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+    */
+
+
+
+[data-scroll-container] {
+    overflow: hidden;
+}
+
+
+.sticky-image-container {
+    position: relative;
+    height: 200vh;
+    background: #0c0b09;
+}
+
+
+.sticky-image-element {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    transform: translateY(0);
+}
+
+.sticky-image {
     max-width: 60%;
     height: auto;
     border-radius: 20px;

@@ -23,14 +23,13 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/locomotiv.css" rel="stylesheet">
+  <link href="assets/vendor/locomotive-scroll/locomotive-scroll.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!--Locomotive Library-->
-  <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <link href="assets/css/locomotiv.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
@@ -153,13 +152,28 @@
       
 
     <!--Fixed Image-->
+              <!--      <div class="data-scroll-container">
+                      <section data-scroll-section>
+                        <div class="sticky-image-container">
+                          <div class="sticky-image-element" data-scroll data-scroll-sticky data-scroll-target=".sticky-image-container">
+                            <img src="assets/img/fixed-1.jpg" class="sticky-image" alt="Imagen sticky">
+                          </div>
+                        </div>
+                      </section>
+                    </div>    -->
+
     <div class="data-scroll-container">
       <section data-scroll-section>
         <div class="sticky-image-container">
           <div class="sticky-image-element" data-scroll data-scroll-sticky data-scroll-target=".sticky-image-container">
-            <img src="assets/img/fixed-1.jpg" class="sticky-image" alt="Imagen sticky">
+            <img src="assets/img/fixed-1.jpg" alt="Sticky image" class="sticky-image">
           </div>
         </div>
+
+                <!--  </div>
+                    <div class="fixed-target"></div>
+                    <div class="dynamicBackground" data-scroll data-scroll-sticky data-scroll-target="sticky-image-element" style="background-image: ('assets/img/fixed-1.jpg');">
+                    </div>  -->
       </section>
     </div>
     <!--End Fixed Image-->
@@ -917,8 +931,7 @@
   <script src="assets/js/main.js"></script>
 
   <!--Locomotive Library-->
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-  <script src="assets/js/locomotive.js"></script>
+  <script src="assets/vendor/locomotive-scroll/locomotive-scroll.min.js"></script>
 
 </body>
 
