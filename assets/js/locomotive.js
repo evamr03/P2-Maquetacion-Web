@@ -17,20 +17,13 @@ window.addEventListener('load', () =>{
 })
 */
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector("scroll-container"),
-  smooth:true,
-  lerp: 0.1
-});
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const scroll = new LocomotiveScroll({
       el: document.querySelector("[data-scroll-container]"),
-      smooth: true,
-      lerp: 0.1
+      smooth: true
   });
 
-  window.addEventListener('load', () => {
+  window.addEventListener("load", () => {
       scroll.update();
   });
 });
