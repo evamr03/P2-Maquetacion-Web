@@ -218,3 +218,17 @@ gsap.timeline({ repeat: -1, repeatDelay: 1 })
   .to(".word", { opacity: 0, duration: 0.5, stagger: 1, ease: "power2.inOut" })
   .to(".word", { opacity: 1, duration: 0.5, stagger: 1, ease: "power2.inOut" });
 
+
+
+/* JQUERY Botón */
+$(document).ready(function() {
+  $(".message-button").click(function() {
+    $(".confirmation-message")
+      .stop()
+      .slideDown(300)
+      .animate({ top: "50px" }, 500)
+      .delay(2000)
+      .fadeOut(500)
+      .slideUp(300);
+  });
+});
