@@ -698,8 +698,7 @@
 
     </section><!-- /Reservas Section -->
 
-
-
+     <!-- Botón gracias -->
     <div id="thank-you-popup" class="popup-overlay">
       <div class="popup-content">
         <button id="close-thank-you-popup" class="close-button">&times;</button>
@@ -709,8 +708,6 @@
     </div>
     
     
-
-
 
     <!-- Reseñas Section -->
     <section id="testimonials" class="testimonials section">
@@ -1158,15 +1155,14 @@
     const closeThankYouPopup = document.getElementById('close-thank-you-popup');
   
     form.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevenir envío real por ahora
-      thankYouPopup.style.display = 'block'; // Mostrar el pop-up de agradecimiento
+      event.preventDefault(); 
+      thankYouPopup.style.display = 'block'; 
     });
   
     closeThankYouPopup.addEventListener('click', function() {
-      thankYouPopup.style.display = 'none'; // Cerrar el pop-up de agradecimiento
+      thankYouPopup.style.display = 'none'; 
     });
   
-    // Opcional: cerrar el pop-up al hacer clic fuera del contenido
     thankYouPopup.addEventListener('click', function(event) {
       if (event.target === thankYouPopup) {
         thankYouPopup.style.display = 'none';
