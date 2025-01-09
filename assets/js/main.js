@@ -1,3 +1,31 @@
+ /**
+   * Pop Up
+   */
+
+$(document).ready(function () {
+    // Mostrar el pop-up 3 segundos después de cargar la página
+    setTimeout(function () {
+      $("#popup-message").fadeIn(500);
+    }, 1500);
+
+    // Cerrar el pop-up al hacer clic en el botón de cierre
+    $("#close-popup").click(function () {
+      $("#popup-message").fadeOut(500);
+    });
+
+    // Cerrar el pop-up al hacer clic en el botón de explorar
+    $(".popup-button").click(function () {
+      $("#popup-message").fadeOut(500);
+    });
+
+    // Cerrar el pop-up al hacer clic fuera del contenido
+    $("#popup-message").click(function (e) {
+      if ($(e.target).is("#popup-message")) {
+        $(this).fadeOut(500);
+      }
+    });
+  });
+
 (function() {
   "use strict";
   /**
