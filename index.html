@@ -698,6 +698,20 @@
 
     </section><!-- /Reservas Section -->
 
+
+
+    <div id="thank-you-popup" class="popup-overlay">
+      <div class="popup-content">
+        <button id="close-thank-you-popup" class="close-button">&times;</button>
+        <h3 class="popup-heading">¡Gracias por tu reserva!</h3>
+        <p class="popup-text">Hemos recibido tu solicitud. Te contactaremos pronto para confirmarla.</p>
+      </div>
+    </div>
+    
+    
+
+
+
     <!-- Reseñas Section -->
     <section id="testimonials" class="testimonials section">
 
@@ -1136,6 +1150,31 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+  <script>
+    const form = document.querySelector('.php-email-form');
+    const thankYouPopup = document.getElementById('thank-you-popup');
+    const closeThankYouPopup = document.getElementById('close-thank-you-popup');
+  
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevenir envío real por ahora
+      thankYouPopup.style.display = 'block'; // Mostrar el pop-up de agradecimiento
+    });
+  
+    closeThankYouPopup.addEventListener('click', function() {
+      thankYouPopup.style.display = 'none'; // Cerrar el pop-up de agradecimiento
+    });
+  
+    // Opcional: cerrar el pop-up al hacer clic fuera del contenido
+    thankYouPopup.addEventListener('click', function(event) {
+      if (event.target === thankYouPopup) {
+        thankYouPopup.style.display = 'none';
+      }
+    });
+  </script>
+  
+  
 
 </body>
 
