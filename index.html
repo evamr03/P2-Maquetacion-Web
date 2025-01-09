@@ -1035,27 +1035,6 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <script>
-    const form = document.querySelector('.php-email-form');
-    const thankYouPopup = document.getElementById('thank-you-popup');
-    const closeThankYouPopup = document.getElementById('close-thank-you-popup');
-  
-    form.addEventListener('submit', function(event) {
-      event.preventDefault(); 
-      thankYouPopup.style.display = 'block'; 
-    });
-  
-    closeThankYouPopup.addEventListener('click', function() {
-      thankYouPopup.style.display = 'none'; 
-    });
-  
-   
-    thankYouPopup.addEventListener('click', function(event) {
-      if (event.target === thankYouPopup) {
-        thankYouPopup.style.display = 'none';
-      }
-    });
-  </script>
 
 </body>
 
