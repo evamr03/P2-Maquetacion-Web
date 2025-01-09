@@ -1,0 +1,33 @@
+[data-scroll-container] {
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .horizontal-scroll {
+    display: flex;
+    width: 300%;
+    height: 100vh;
+  }
+
+  .horizontal-scroll div {
+    flex: 0 0 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .horizontal-scroll img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .horizontal-scroll div:nth-child(even) {
+    background-color: #0c0b09;
+  }
+
+  .horizontal-scroll div:nth-child(odd) {
+    background-color: #0c0b09;
+  }
