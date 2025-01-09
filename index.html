@@ -78,7 +78,7 @@
 
   <main class="main">
 
-    <div id="popup-message" class="popup-overlay"></div>
+    <div id="popup-message" class="popup-overlay">
       <div class="popup-content">
         <button id="close-popup" class="close-button">&times;</button>
         <h3 class="popup-heading">¡Bienvenid@!</h3>
@@ -1034,6 +1034,27 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    const form = document.querySelector('.php-email-form');
+    const thankYouPopup = document.getElementById('thank-you-popup');
+    const closeThankYouPopup = document.getElementById('close-thank-you-popup');
+  
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      thankYouPopup.style.display = 'block'; 
+    });
+  
+    closeThankYouPopup.addEventListener('click', function() {
+      thankYouPopup.style.display = 'none'; 
+    });
+  
+    thankYouPopup.addEventListener('click', function(event) {
+      if (event.target === thankYouPopup) {
+        thankYouPopup.style.display = 'none';
+      }
+    });
+  </script>
 
 
 </body>
